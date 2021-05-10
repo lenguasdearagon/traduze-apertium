@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% load my_template_tags %}
+
+
+{% block container %}
+
+<div class="container mt-5">
+
+	<!--<div class="bg-white rounded shadow p-3 mb-3">
+		<h5 class="d-block text-traduze mb-2">{% trans "Traducción de URLs" %}</h5>
+		<span class="d-block mb-4">{% trans "Traducción de páginas webs en línea" %}</span>
+		<div class="md-form">
+          <input type="text" name="url" class="form-control" placeholder="https://" value="{{request.GET.url}}">
+        </div>
+        <a id="translate_url_btn" class="btn btn-traduze" role="button">
+          <span class="spinner spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span>
+          <span class="submit_button_text">{% trans "Traducir" %}</span>
+        </a>
+	</div>-->
+
+	<div class="bg-white rounded shadow p-3">
+		<iframe id="FileFrame" srcdoc="" class="w-100" style="height: 800px;"></iframe>
+	</div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+
+		var translate_url = function(){
+          	$.ajax({                        
+            	method: "GET",              
+            	url: "{% url 'translate_url' %}",                    
+            	data: {"url": "{{request.GET.url}}"},
+			    beforeSend: function(XMLHttpRequest) {
+			    },
+	                  success: function(data){
+	                      console.log(data)
+			      $("#FileFrame").attr("srcdoc", data);
+			      /*
+			      var doc = document.getElementById('FileFrame');
+			      iframedoc = iframe.contentDocument || iframe.contentWindow.document;
+
+					iframedoc.body.innerHTML = 'Hello world';
+			       doc.open();
+			       doc.write(data.translation);
+			       doc.close()
+			       */
+			    },
+			    error: function(data){
+			      console.log(data);
+			    }
+			});
+		}
+
+		translate_url();
+
+		var my_func = function(){
+			console.log(event)
+			console.log("Click")
+		}
+		document.getElementById("FileFrame")
+		.contentDocument.addEventListener("click", my_func, false);
+
+
+		
+
+		/* TRANSLATE URL BUTTON 
+		$("#translate_url_btn").on("click", function(){
+
+		  
+		});*/
+	})
+</script>
+{% endblock %}

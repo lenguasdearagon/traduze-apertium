@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% load my_template_tags %}
+
+{% block container %}
+	<div class="info-container container bg-white rounded z-depth-1 p-3">
+		<h1>{% trans "Contacto" %}</h1>
+		<p>{% trans "Para cualquier consulta:" %}</p>
+		<p class="mb-1"><strong>{% trans "Dirección General de Política Lingüistica" %}</strong></p>
+		<p class="mb-1">{% trans "Avda. Ranillas 5 D" %}</p>
+		<p>{% trans "50071 Zaragoza" %}</p>
+		<p>{% blocktrans %}<strong>Tfno:</strong> 976 715 465{% endblocktrans %}</p>
+		<p>{% blocktrans %}<strong>Email:</strong> <a href="mailto:dgpollinguistica@aragon.es">dgpollinguistica@aragon.es</a>{% endblocktrans %}</p>
+	</div>
+{% endblock %}

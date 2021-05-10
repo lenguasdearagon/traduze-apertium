@@ -1,0 +1,166 @@
+{% load i18n %}
+{% load static %}
+{% load my_template_tags %}
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/css/mdb.min.css" rel="stylesheet">
+    <!-- Traduze styles -->
+    <link href="{% static 'css/traduze.css' %}" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}">
+
+    <title>Traduze - {% trans "Traductor castellano-aragonés" %}</title>
+    <meta name="description" content="Traductor automático castellano-aragonés basado en reglas.">
+
+    {% block google_anaytics %}
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-B95V300S84"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-B95V300S84');
+      </script>
+    {% endblock %}
+  </head>
+
+  <body>
+  	
+  	<!--Navbar-->
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="{% url 'index' %}">
+        <img src="{% static 'img/traduze_rojo.jpg' %}" width="170">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse mt-3 mt-md-0" id="basicExampleNav">
+        <!-- Links -->
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}">Traductor</a>
+          </li>
+        </ul>
+        <!-- Languages -->
+        <ul class="navbar-nav ms-auto nav-flex-icons">
+          {% get_current_language as LANGUAGE_CODE %}
+          {% get_available_languages as LANGUAGES %}
+          <form name="ui" action="{% url 'set_language' %}" method="post" style="display: none;">
+            {% csrf_token %}
+            <input name="next" type="hidden" value="{{ redirect_to }}" />
+            <input name="language" type="hidden"/>
+          </form>
+
+          <li class="nav-item dropdown d-flex align-items-center">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ LANGUAGES|get_language:LANGUAGE_CODE }}</a>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              {% for language in LANGUAGES %}
+                <a class="dropdown-item" href="#" onclick="document.ui.language.value='{{ language.0 }}'; document.ui.submit();">{{ language.1 }}</a>
+              {% endfor %}
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End navbar -->
+
+    {% block container %}
+    {% endblock %}
+
+    <!-- Footer -->
+    <div id="footer" class="container-fluid text-center py-4 pb-4 bg-white border-top" style="margin-top: 5rem;">
+      <div id="disclaimer">
+        <p class="fw-bold">{% blocktrans %}TraduZe, versión Beta: Si encuentras algún error en TraduZe y quieres compartirlo con nosotros para mejorarlo, rellena este <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7H5ie-g3MjI6WFfdP0aHKm_pVQnUD_WIv__w2pkM9s-lR-w/viewform?usp=sf_link" class="text-traduze">formulario</a>. Muchas gracias{% endblocktrans %}</p>
+      </div>
+      <div class="mb-4">
+        <a href="http://www.lenguasdearagon.org/" target="_blank" class="btn btn-traduze btn-sm" role="button">{% trans "Lenguas de aragón" %}<i class="ms-1 fas fa-external-link-alt"></i></a>
+        <a href="https://aragonario.aragon.es/" target="_blank" class="btn btn-traduze btn-sm" role="button">Aragonario<i class="ms-1 fas fa-external-link-alt"></i></a>
+      </div>
+      <div class="container mb-4">
+        <div class="row">
+          <div class="col-md-3">
+            <a class="text-traduze" href="{% url 'contact' %}">{% trans "Contacto" %}</a>
+          </div>
+          <div class="col-md-3">
+            <a class="text-traduze" href="{% url 'help' %}">{% trans "Ayuda" %}</a>
+          </div>
+          <div class="col-md-3">
+            <a class="text-traduze" href="{% url 'legal_notice' %}">{% trans "Aviso legal" %}</a>
+          </div>
+          <div class="col-md-3">
+            <a class="text-traduze" href="{% url 'privacy_policy' %}">{% trans "Política de privacidad" %}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 mb-4 mb-md-0 d-flex align-items-center justify-content-center">
+          <img src="{% static 'img/logo-interreg-poctefa-RGB-LINGUATEC.svg' %}" width="200">
+        </div>
+        <div class="col-md-3 mb-4 mb-md-0 d-flex align-items-center justify-content-center">
+          <img src="{% static 'img/logo-aragon-turismo-wide.svg' %}" width="200">
+        </div>
+        <div class="col-md-3 mb-4 mb-md-0 d-flex align-items-center justify-content-center">
+          <img src="{% static 'img/apertium_logo.png' %}" width="150">
+        </div>
+	<div class="col-md-3 mb-4 mb-md-0 d-flex align-items-center justify-content-center">
+          <img src="{% static 'img/logo-gobierno-aragon.svg' %}" width="200">
+        </div>
+      </div>
+    </div>
+    <!-- End footer -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js"></script>
+
+    {% block cookiesbar %}
+      {% include 'info/cookie_banner.html' %}
+    {% endblock %}
+
+    {% block screen_size_js %}
+       <!--<script type="text/javascript">
+        var print_size = function(){
+          if($(window).width()<576){
+            $("#screen_brkpnt").text($(window).width() + "px/xs");
+          }else if($(window).width()>=576 && $(window).width()<768){
+            $("#screen_brkpnt").text($(window).width() + "px/sm");
+          }else if($(window).width()>=768 && $(window).width()<992){
+            $("#screen_brkpnt").text($(window).width() + "px/md");
+          }else if($(window).width()>=992 && $(window).width()<1200){
+            $("#screen_brkpnt").text($(window).width() + "px/lg");
+          }else{
+            $("#screen_brkpnt").text($(window).width() + "px/xl");
+          }
+        }
+        if ($('#screen_brkpnt').length == 0 ) {
+          $("body").append("<span id='screen_brkpnt' style='position: fixed; top:0; left:0; z-index:2000;'></span>");
+          print_size();
+        }
+        $( window ).resize(function() {
+          print_size();
+        });
+      </script>-->
+    {% endblock %}
+
+    {% block js %}
+    {% endblock %}
+  </body>   
+</html> 

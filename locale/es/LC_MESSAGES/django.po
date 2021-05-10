@@ -1,0 +1,538 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-16 16:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: app/templates/base.html:25
+msgid "Traductor castellano-aragonés"
+msgstr ""
+
+#: app/templates/base.html:76
+msgid ""
+"TraduZe, versión Beta: Si encuentras algún error en TraduZe y quieres "
+"compartirlo con nosotros para mejorarlo, rellena este <a href=\"https://docs."
+"google.com/forms/d/e/1FAIpQLSe7H5ie-g3MjI6WFfdP0aHKm_pVQnUD_WIv__w2pkM9s-lR-"
+"w/viewform?usp=sf_link\" class=\"text-traduze\">formulario</a>. Muchas "
+"gracias"
+msgstr ""
+
+#: app/templates/base.html:79
+msgid "Lenguas de aragón"
+msgstr ""
+
+#: app/templates/base.html:85 app/templates/info/contact.html:8
+msgid "Contacto"
+msgstr ""
+
+#: app/templates/base.html:88 app/templates/info/help.html:8
+msgid "Ayuda"
+msgstr ""
+
+#: app/templates/base.html:91
+msgid "Aviso legal"
+msgstr ""
+
+#: app/templates/base.html:94
+msgid "Política de privacidad"
+msgstr ""
+
+#: app/templates/index.html:35
+msgid "<strong>Error!</strong> Ha ocurrido un error al traducir."
+msgstr ""
+
+#: app/templates/index.html:45
+msgid "Castellano"
+msgstr ""
+
+#: app/templates/index.html:47
+msgid "Introduce el texto que quieras traducir"
+msgstr ""
+
+#: app/templates/index.html:57 app/templates/index.html:120
+#: app/templates/index.html:144 app/templates/index.html:211
+#: app/templates/index.html:219 app/templates/reader.html:19
+msgid "Traducir"
+msgstr ""
+
+#: app/templates/index.html:67
+msgid "Aragonés"
+msgstr ""
+
+#: app/templates/index.html:70
+msgid "Copiado"
+msgstr ""
+
+#: app/templates/index.html:100 app/templates/info/help.html:21
+msgid "Traducción de documentos"
+msgstr ""
+
+#: app/templates/index.html:102
+msgid ""
+"<strong class=\"text-traduze\">Examina tu dispositivo</strong> o arrastra y "
+"suelta el archivo aquí"
+msgstr ""
+
+#: app/templates/index.html:103
+msgid "Formatos soportados:"
+msgstr ""
+
+#: app/templates/index.html:112
+msgid "Archivo"
+msgstr ""
+
+#: app/templates/index.html:123
+msgid "Descargar archivo traducido"
+msgstr ""
+
+#: app/templates/index.html:137 app/templates/reader.html:12
+msgid "Traducción de URLs"
+msgstr ""
+
+#: app/templates/index.html:138 app/templates/reader.html:13
+msgid "Traducción de páginas webs en línea"
+msgstr ""
+
+#: app/templates/index.html:199
+msgid "Traduciendo"
+msgstr ""
+
+#: app/templates/index.html:312 app/templates/index.html:313
+msgid "Éxito"
+msgstr ""
+
+#: app/templates/index.html:331 app/templates/index.html:332
+msgid "Error"
+msgstr ""
+
+#: app/templates/info/contact.html:9
+msgid "Para cualquier consulta:"
+msgstr ""
+
+#: app/templates/info/contact.html:10
+msgid "Dirección General de Política Lingüistica"
+msgstr ""
+
+#: app/templates/info/contact.html:11
+msgid "Avda. Ranillas 5 D"
+msgstr ""
+
+#: app/templates/info/contact.html:12
+msgid "50071 Zaragoza"
+msgstr ""
+
+#: app/templates/info/contact.html:13
+msgid "<strong>Tfno:</strong> 976 715 465"
+msgstr ""
+
+#: app/templates/info/contact.html:14
+msgid ""
+"<strong>Email:</strong> <a href=\"mailto:dgpollinguistica@aragon.es"
+"\">dgpollinguistica@aragon.es</a>"
+msgstr ""
+
+#: app/templates/info/help.html:10
+msgid "Presentación"
+msgstr ""
+
+#: app/templates/info/help.html:12
+msgid "Versión BETA, Diciembre 2020"
+msgstr ""
+
+#: app/templates/info/help.html:13
+msgid ""
+"Este traductor automático ha sido creado tomando como base el traductor de "
+"código abierto Apertium. Los datos lingüísticos (diccionarios y reglas) del "
+"traductor automático TraduZe se basan <strong>parcialmente</strong> en datos "
+"lingüísticos para la traducción entre castellano y aragonés desarrollados y "
+"publicados en el marco del proyecto <a href=\"https://apertium.org"
+"\">Apertium</a>; el motor que interpreta estos diccionarios y estos datos "
+"son el motor de <a href=\"https://apertium.org\">Apertium</a>."
+msgstr ""
+
+#: app/templates/info/help.html:14
+msgid ""
+"Este traductor automático realiza la traducción en la dirección del "
+"castellano al aragonés."
+msgstr ""
+
+#: app/templates/info/help.html:16
+msgid "¿Cómo utilizar el Traductor?"
+msgstr ""
+
+#: app/templates/info/help.html:17
+msgid ""
+"La página donde se puede consultar el traductor automático es la siguiente: "
+"<a href=\"https://traduze.aragon.es\">traduze.aragón.es</a>."
+msgstr ""
+
+#: app/templates/info/help.html:18
+msgid ""
+"El traductor automático de esta página web ofrece tres maneras distintas de "
+"traducir un texto del castellano al aragonés:"
+msgstr ""
+
+#: app/templates/info/help.html:20
+msgid "Traducción de textos a través de un formulario"
+msgstr ""
+
+#: app/templates/info/help.html:22
+msgid "Traducción al vuelo de un sitio web"
+msgstr ""
+
+#: app/templates/info/help.html:25
+msgid "1) Traducción de textos a través de un formulario"
+msgstr ""
+
+#: app/templates/info/help.html:26
+msgid ""
+"Para su utilización escriba la frase que desea traducir en el formulario de "
+"la izquierda y pulse el botón ‘TRADUCIR’. El resultado de la traducción, la "
+"frase traducida al aragonés aparecerá en formulario de la derecha."
+msgstr ""
+
+#: app/templates/info/help.html:30
+msgid "Los símbolos que figuran en los dos formularios sirven para:"
+msgstr ""
+
+#: app/templates/info/help.html:32
+msgid "Borrar el texto"
+msgstr ""
+
+#: app/templates/info/help.html:33
+msgid "Copiar el texto"
+msgstr ""
+
+#: app/templates/info/help.html:36
+msgid "2) Traducción de documentos"
+msgstr ""
+
+#: app/templates/info/help.html:37
+msgid ""
+"Esta interfaz ofrece la posibilidad de traducir documentos de los siguientes "
+"formatos: txt, docx, xlsx, pptx, odt, ods, odp, html. Para ello, el usuario "
+"deberá hacer clic en el botón de ‘Traducción de documentos’, en la parte "
+"inferior izquierda de la pantalla y subir el documento elegido:"
+msgstr ""
+
+#: app/templates/info/help.html:41
+msgid ""
+"Una vez elegido el documento, el usuario deberá hacer clic en el botón de "
+"abrir y cuando el documento haya sido traducido al aragonés, solo tendrá que "
+"descargar el archivo a su ordenador."
+msgstr ""
+
+#: app/templates/info/help.html:46
+msgid "3) Traducción al vuelo de un sitio web"
+msgstr ""
+
+#: app/templates/info/help.html:47
+msgid ""
+"Esta página también ofrece la posibilidad de traducir automáticamente "
+"páginas web. Para ello el usuario deberá ir al botón de ‘Traducción de URLs’ "
+"que se halla en la parte inferior derecha de la pantalla:"
+msgstr ""
+
+#: app/templates/info/help.html:51
+msgid "La página será traducida y se mostrará en la misma pantalla:"
+msgstr ""
+
+#: app/templates/info/help.html:55
+msgid ""
+"Por último, TraduZe es un traductor automático en versión Beta. Por ello si "
+"el usuario encuentra algún error o quiere hacer algún comentario puede "
+"compartirlo mediante el formulario que se halla en la parte inferior de la "
+"página:"
+msgstr ""
+
+#: app/templates/info/legal_notice.html:8
+msgid "Aviso Legal"
+msgstr ""
+
+#: app/templates/info/legal_notice.html:10
+msgid "Derechos de Propiedad Intelectual y Sobre Nombres y Signos Distintivos"
+msgstr ""
+
+#: app/templates/info/legal_notice.html:11
+msgid ""
+"Toda la información albergada en esta web, así como su diseño gráfico, "
+"textos, imágenes, sonido y cualquier otro material, es propiedad intelectual "
+"del Gobierno de Aragón, salvo que sean materiales cedidos o conste su "
+"titularidad de otra persona física o jurídica."
+msgstr ""
+
+#: app/templates/info/legal_notice.html:12
+msgid ""
+"Los datos lingüísticos (diccionarios y reglas) del traductor automático "
+"TraduZe se basan <strong>parcialmente</strong> en datos lingüísticos para la "
+"traducción entre castellano y aragonés desarrollados y publicados en el "
+"marco del proyecto <a href=\"https://apertium.org\">Apertium</a>; el motor "
+"que interpreta estos diccionarios y estos datos son el motor de <a href="
+"\"https://apertium.org\">Apertium</a>. El empleo de estos datos y programas "
+"se fundamenta en el hecho de que se trata de software libre y de datos "
+"libres publicados bajo los términos de la licencia GNU GPL v3.0."
+msgstr ""
+
+#: app/templates/info/legal_notice.html:13
+msgid ""
+"No está permitida la modificación del sitio Web institucional ni de sus "
+"contenidos."
+msgstr ""
+
+#: app/templates/info/legal_notice.html:14
+msgid ""
+"Además de los datos lingüísticos y el motor de traducción que están bajo la "
+"licencia GNU GPL v3, el resto de la información contenida en el traductor "
+"está bajo una <a href=\"http://creativecommons.org/licenses/by-sa/4.0/"
+"\">licencia de Creative Commons Reconocimiento-CompartirIgual 4.0 "
+"Internacional</a> (CC BY-SA 4.0). Consulte el texto completo de <a href="
+"\"https://creativecommons.org/licenses/by-sa/4.0/legalcode.es\">la licencia</"
+"a> para obtener más detalles."
+msgstr ""
+
+#: app/templates/info/legal_notice.html:17
+msgid "Exoneración de Responsabilidad"
+msgstr ""
+
+#: app/templates/info/legal_notice.html:18
+msgid ""
+"En aquellos casos en que el sitio Web del Gobierno de Aragón contenga "
+"enlaces a otras páginas o sitios Web de titularidad ajena, ésta declina "
+"cualquier responsabilidad de sus contenidos o los servicios prestados a "
+"través de ellas."
+msgstr ""
+
+#: app/templates/info/legal_notice.html:19
+msgid ""
+"El Gobierno de Aragón no será responsable de los fallos en la comunicación, "
+"plazos o versiones producidos por servicios de telecomunicación o por "
+"cualesquiera otros servicios técnicos prestados por terceras personas o "
+"desde servidores ajenos."
+msgstr ""
+
+#: app/templates/info/legal_notice.html:20
+msgid ""
+"El Gobierno de Aragón no garantiza que la Web y el servidor estén libres de "
+"virus y no se hacen responsables de los daños causados por el acceso a la "
+"Web o por la imposibilidad de acceder a esta."
+msgstr ""
+
+#: app/templates/info/legal_notice.html:21
+msgid ""
+"En ningún caso las galletas u otros medios de naturaleza análoga que se "
+"puedan utilizar servirán para almacenar información que permita identificar "
+"la persona física usuaria de la Web."
+msgstr ""
+
+#: app/templates/info/legal_notice.html:23
+msgid "Enlaces en otros Sitios Web al Portal"
+msgstr ""
+
+#: app/templates/info/legal_notice.html:24
+msgid ""
+"En aquellos casos en que sitios Web de titularidad ajena al Gobierno de "
+"Aragón contengan enlaces a esta página, se exigirá el cumplimiento de las "
+"siguientes normas previa petición de autorización de enlace por parte de "
+"estos."
+msgstr ""
+
+#: app/templates/info/legal_notice.html:25
+msgid ""
+"Que el enlace contenga indicación de la fuente (“Gobierno de Aragón” u otro "
+"identificativo de la unidad)."
+msgstr ""
+
+#: app/templates/info/legal_notice.html:26
+msgid ""
+"Que el efecto de accionar el “botón de enlace” sea la comunicación con la "
+"página web del Gobierno de Aragón, y no una incorporación de los contenidos "
+"de nuestro “web site” en la página."
+msgstr ""
+
+#: app/templates/info/legal_notice.html:27
+msgid ""
+"Que sean respetados los derechos de propiedad intelectual e industrial del "
+"Gobierno de Aragón, no pudiendo incorporar logos, buscadores, etc., propios "
+"del Gobierno de Aragón, en la página."
+msgstr ""
+
+#: app/templates/info/legal_notice.html:28
+msgid ""
+"Que recíprocamente, el Gobierno de Aragón también podrá establecer enlaces "
+"en caso de que lo considere oportuno desde su página Web a las de la "
+"organización."
+msgstr ""
+
+#: app/templates/info/legal_notice.html:29
+msgid ""
+"Por el incumplimiento de estas condiciones o por otras razones si así se "
+"estima oportuno, se podrá revocar la autorización sin derecho a "
+"indemnización ni compensación alguna."
+msgstr ""
+
+#: app/templates/info/legal_notice.html:31
+msgid "Condiciones de uso"
+msgstr ""
+
+#: app/templates/info/legal_notice.html:32
+msgid ""
+"Este sistema de traducción automática puede usarse de varias maneras, pero "
+"todas cumplen las siguientes condiciones:"
+msgstr ""
+
+#: app/templates/info/legal_notice.html:33
+msgid ""
+"No se guardarán los textos que el usuario envíe al utilizar el servicio; el "
+"contenido se utilizará únicamente para la traducción y el Gobierno de Aragón "
+"no conocerá la información almacenada. Una vez traducido el contenido, se "
+"guardará solamente la información relativa al número de palabras traducidas; "
+"todo ello con el fin de medir el uso del servicio y obtener estadísticas."
+msgstr ""
+
+#: app/templates/info/legal_notice.html:34
+msgid ""
+"Los documentos que el usuario envía utilizando el servicio se almacenan en "
+"el servidor; el usuario puede solicitar el borrado de esta información en "
+"cualquier momento."
+msgstr ""
+
+#: app/templates/info/privacy_policy.html:8
+msgid "Política de Privacidad"
+msgstr ""
+
+#: app/templates/info/privacy_policy.html:9
+msgid ""
+"De conformidad con lo dispuesto en la Ley Orgánica 15/1999, de 13 de "
+"diciembre, de Protección de Datos de Carácter Personal (LOPD), modificada "
+"por la Ley 62/2003, de 30 de diciembre, de medidas fiscales, administrativas "
+"y del orden social y en la sentencia 292/2000, de 30 de noviembre, recaída "
+"en el recurso de inconstitucionalidad 1463/2000 (BOE num. 4, de 4 de enero "
+"del 2001), los datos suministrados por el usuario quedarán incorporados en "
+"un fichero automatizado y se recogerán a través de los mecanismos "
+"correspondientes, los cuales solo contendrán los campos imprescindibles para "
+"poder prestar el servicio requerido por el usuario."
+msgstr ""
+
+#: app/templates/info/privacy_policy.html:10
+msgid ""
+"Los datos de carácter personal serán tratados adecuadamente conforme a lo "
+"dispuesto en el Real Decreto 1720/2007, de 21 de diciembre, por el que se "
+"aprueba el Reglamento de desarrollo de la Ley Orgánica 15/1999, de 13 de "
+"diciembre, de protección de datos de carácter personal, tomándose las "
+"medidas de seguridad necesarias para evitar su alteración, pérdida, "
+"tratamiento o acceso no autorizado por parte de terceros. Los datos de "
+"carácter personal sólo podrán ser cedidos, según lo dispuesto en el artículo "
+"11 de la Ley Orgánica 15/1999 de 13 de diciembre, para el cumplimiento de "
+"fines directamente relacionados con las funciones legítimas del cedente y "
+"del cesionario con el previo consentimiento del afectado."
+msgstr ""
+
+#: app/templates/info/privacy_policy.html:12
+msgid "Política de Cookies"
+msgstr ""
+
+#: app/templates/info/privacy_policy.html:13
+msgid ""
+"Cookie es un fichero que se descarga en su ordenador al acceder a "
+"determinadas páginas web. Las cookies permiten a una página web, entre otras "
+"cosas, almacenar y recuperar información sobre los hábitos de navegación de "
+"un usuario o de su equipo y, dependiendo de la información que contengan y "
+"de la forma en que utilice su equipo, pueden utilizarse para reconocer al "
+"usuario. El navegador del usuario memoriza cookies en el disco duro "
+"solamente durante la sesión actual ocupando un espacio de memoria mínimo y "
+"no perjudicando al ordenador. Las cookies no contienen ninguna clase de "
+"información personal específica, y la mayoría de las mismas se borran del "
+"disco duro al finalizar la sesión de navegador (las denominadas cookies de "
+"sesión)."
+msgstr ""
+
+#: app/templates/info/privacy_policy.html:14
+msgid ""
+"La mayoría de los navegadores aceptan como estándar a las cookies y, con "
+"independencia de las mismas, permiten o impiden en los ajustes de seguridad "
+"las cookies temporales o memorizadas."
+msgstr ""
+
+#: app/templates/info/privacy_policy.html:15
+msgid ""
+"Sin su expreso consentimiento –mediante la activación de las cookies en su "
+"navegador– no enlazará en las cookies los datos memorizados con sus datos "
+"personales proporcionados en el momento del registro o la compra."
+msgstr ""
+
+#: app/templates/info/privacy_policy.html:16
+msgid "¿Qué tipos de cookies utiliza esta página web?"
+msgstr ""
+
+#: app/templates/info/privacy_policy.html:17
+msgid ""
+"<strong>Cookies técnicas:</strong> Son aquéllas que permiten al usuario la "
+"navegación a través de una página web, plataforma o aplicación y la "
+"utilización de las diferentes opciones o servicios que en ella existan como, "
+"por ejemplo, controlar el tráfico y la comunicación de datos, identificar la "
+"sesión, acceder a partes de acceso restringido, recordar los elementos que "
+"integran un pedido, realizar el proceso de compra de un pedido, realizar la "
+"solicitud de inscripción o participación en un evento, utilizar elementos de "
+"seguridad durante la navegación, almacenar contenidos para la difusión de "
+"videos o sonido o compartir contenidos a través de redes sociales."
+msgstr ""
+
+#: app/templates/info/privacy_policy.html:18
+msgid ""
+"<strong>Cookies de personalización:</strong> Son aquéllas que permiten al "
+"usuario acceder al servicio con algunas características de carácter general "
+"predefinidas en función de una serie de criterios en el terminal del usuario "
+"como por ejemplo serian el idioma, el tipo de navegador a través del cual "
+"accede al servicio, la configuración regional desde donde accede al "
+"servicio, etc."
+msgstr ""
+
+#: app/templates/info/privacy_policy.html:19
+msgid ""
+"<strong>Cookies de análisis:</strong> Son aquéllas que bien tratadas por "
+"nosotros o por terceros, nos permiten cuantificar el número de usuarios y "
+"así realizar la medición y análisis estadístico de la utilización que hacen "
+"los usuarios del servicio ofertado. Para ello se analiza su navegación en "
+"nuestra página web con el fin de mejorar la oferta de productos o servicios "
+"que le ofrecemos."
+msgstr ""
+
+#: app/templates/info/privacy_policy.html:20
+msgid ""
+"<strong>Cookies de terceros:</strong> La web puede utilizar servicios de "
+"terceros que recopilarán información con fines estadísticos, de uso del Site "
+"por parte del usuario y para la prestación de otros servicios relacionados "
+"con la actividad del Website y otros servicios de Internet."
+msgstr ""
+
+#: app/templates/info/privacy_policy.html:21
+msgid ""
+"El Usuario acepta expresamente, por la utilización de este Site, el "
+"tratamiento de la información recabada en la forma y con los fines "
+"anteriormente mencionados. Y asimismo reconoce conocer la posibilidad de "
+"rechazar el tratamiento de tales datos o información rechazando el uso de "
+"Cookies mediante la selección de la configuración apropiada a tal fin en su "
+"navegador. Si bien esta opción de bloqueo de Cookies en su navegador puede "
+"no permitirle el uso pleno de todas las funcionalidades del Website."
+msgstr ""
+
+#: app/templates/info/privacy_policy.html:22
+msgid ""
+"Puede usted permitir, bloquear o eliminar las cookies instaladas en su "
+"equipo mediante la configuración de las opciones del navegador instalado en "
+"su ordenador."
+msgstr ""

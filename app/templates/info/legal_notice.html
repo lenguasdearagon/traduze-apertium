@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% load my_template_tags %}
+
+{% block container %}
+	<div class="info-container container bg-white rounded z-depth-1 p-3">
+		<h1>{% trans "Aviso Legal" %}</h1>
+
+		<h2>{% trans "Derechos de Propiedad Intelectual y Sobre Nombres y Signos Distintivos" %}</h2>
+		<p>{% blocktrans %}Toda la información albergada en esta web, así como su diseño gráfico, textos, imágenes, sonido y cualquier otro material, es propiedad intelectual del Gobierno de Aragón, salvo que sean materiales cedidos o conste su titularidad de otra persona física o jurídica.{% endblocktrans %}</p>
+		<p>{% blocktrans %}Los datos lingüísticos (diccionarios y reglas) del traductor automático TraduZe se basan <strong>parcialmente</strong> en datos lingüísticos para la traducción entre castellano y aragonés desarrollados y publicados en el marco del proyecto <a href="https://apertium.org">Apertium</a>; el motor que interpreta estos diccionarios y estos datos son el motor de <a href="https://apertium.org">Apertium</a>. El empleo de estos datos y programas se fundamenta en el hecho de que se trata de software libre y de datos libres publicados bajo los términos de la licencia GNU GPL v3.0.{% endblocktrans %}</p>
+		<p>{% blocktrans %}No está permitida la modificación del sitio Web institucional ni de sus contenidos.{% endblocktrans %}</p>
+		<p>{% blocktrans %}Además de los datos lingüísticos y el motor de traducción que están bajo la licencia GNU GPL v3, el resto de la información contenida en el traductor está bajo una <a href="http://creativecommons.org/licenses/by-sa/4.0/">licencia de Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional</a> (CC BY-SA 4.0). Consulte el texto completo de <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode.es">la licencia</a> para obtener más detalles.{% endblocktrans %}</p>
+
+
+		<h2>{% trans "Exoneración de Responsabilidad" %}</h2>
+		<p>{% blocktrans %}En aquellos casos en que el sitio Web del Gobierno de Aragón contenga enlaces a otras páginas o sitios Web de titularidad ajena, ésta declina cualquier responsabilidad de sus contenidos o los servicios prestados a través de ellas.{% endblocktrans %}</p>
+		<p>{% blocktrans %}El Gobierno de Aragón no será responsable de los fallos en la comunicación, plazos o versiones producidos por servicios de telecomunicación o por cualesquiera otros servicios técnicos prestados por terceras personas o desde servidores ajenos.{% endblocktrans %}</p>
+		<p>{% blocktrans %}El Gobierno de Aragón no garantiza que la Web y el servidor estén libres de virus y no se hacen responsables de los daños causados por el acceso a la Web o por la imposibilidad de acceder a esta.{% endblocktrans %}</p>
+		<p>{% blocktrans %}En ningún caso las galletas u otros medios de naturaleza análoga que se puedan utilizar servirán para almacenar información que permita identificar la persona física usuaria de la Web.{% endblocktrans %}</p>
+
+		<h2>{% trans "Enlaces en otros Sitios Web al Portal" %}</h2>
+		<p>{% blocktrans %}En aquellos casos en que sitios Web de titularidad ajena al Gobierno de Aragón contengan enlaces a esta página, se exigirá el cumplimiento de las siguientes normas previa petición de autorización de enlace por parte de estos.{% endblocktrans %}</p>
+		<p>{% blocktrans %}Que el enlace contenga indicación de la fuente (“Gobierno de Aragón” u otro identificativo de la unidad).{% endblocktrans %}</p>
+		<p>{% blocktrans %}Que el efecto de accionar el “botón de enlace” sea la comunicación con la página web del Gobierno de Aragón, y no una incorporación de los contenidos de nuestro “web site” en la página.{% endblocktrans %}</p>
+		<p>{% blocktrans %}Que sean respetados los derechos de propiedad intelectual e industrial del Gobierno de Aragón, no pudiendo incorporar logos, buscadores, etc., propios del Gobierno de Aragón, en la página.{% endblocktrans %}</p>
+		<p>{% blocktrans %}Que recíprocamente, el Gobierno de Aragón también podrá establecer enlaces en caso de que lo considere oportuno desde su página Web a las de la organización.{% endblocktrans %}</p>
+		<p>{% blocktrans %}Por el incumplimiento de estas condiciones o por otras razones si así se estima oportuno, se podrá revocar la autorización sin derecho a indemnización ni compensación alguna.{% endblocktrans %}</p>
+
+		<h2>{% trans "Condiciones de uso" %}</h2>
+		<p>{% blocktrans %}Este sistema de traducción automática puede usarse de varias maneras, pero todas cumplen las siguientes condiciones:{% endblocktrans %}</p>
+		<ul>
+			<li>{% blocktrans %}No se guardarán los textos que el usuario envíe al utilizar el servicio; el contenido se utilizará únicamente para la traducción y el Gobierno de Aragón no conocerá la información almacenada. Una vez traducido el contenido, se guardará solamente la información relativa al número de palabras traducidas; todo ello con el fin de medir el uso del servicio y obtener estadísticas.{% endblocktrans %}</li>
+			<li>{% blocktrans %}Los documentos que el usuario envía utilizando el servicio se almacenan en el servidor; el usuario puede solicitar el borrado de esta información en cualquier momento.{% endblocktrans %}</li>
+		</ul>
+	</div>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% load my_template_tags %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block container %}
+	<div class="info-container help-container container bg-white rounded z-depth-1 p-3">
+		<h1>{% trans "Ayuda" %}</h1>
+
+		<h2>{% trans "Presentación" %}</h2>
+
+		<h5>{% trans "Versión BETA, Diciembre 2020" %}</h5>
+		<p>{% blocktrans %}Este traductor automático ha sido creado tomando como base el traductor de código abierto Apertium. Los datos lingüísticos (diccionarios y reglas) del traductor automático TraduZe se basan <strong>parcialmente</strong> en datos lingüísticos para la traducción entre castellano y aragonés desarrollados y publicados en el marco del proyecto <a href="https://apertium.org">Apertium</a>; el motor que interpreta estos diccionarios y estos datos son el motor de <a href="https://apertium.org">Apertium</a>.{% endblocktrans %}</p>
+		<p>{% trans "Este traductor automático realiza la traducción en la dirección del castellano al aragonés." %}</p>
+
+		<h2>{% trans "¿Cómo utilizar el Traductor?" %}</h2>
+		<p>{% blocktrans %}La página donde se puede consultar el traductor automático es la siguiente: <a href="https://traduze.aragon.es">traduze.aragón.es</a>.{% endblocktrans %}</p>
+		<p>{% trans "El traductor automático de esta página web ofrece tres maneras distintas de traducir un texto del castellano al aragonés:" %}</p>
+		<ol>
+			<li>{% trans "Traducción de textos a través de un formulario" %}</li>
+			<li>{% trans "Traducción de documentos" %}</li>
+			<li>{% trans "Traducción al vuelo de un sitio web" %}</li>
+		</ol>
+ 
+		<h5 class="mt-4">{% trans "1) Traducción de textos a través de un formulario" %}</h5>
+		<p>{% trans "Para su utilización escriba la frase que desea traducir en el formulario de la izquierda y pulse el botón ‘TRADUCIR’. El resultado de la traducción, la frase traducida al aragonés aparecerá en formulario de la derecha." %}</p>
+		<div class="help_image">
+			<img src="{% if LANGUAGE_CODE == 'an' %}{% static 'img/an/1_TraduZe_ara.png' %}{% else %}{% static 'img/es/1_TraduZe_es.jpg' %}{% endif %}" class="img-fluid">
+		</div>
+		<p>{% trans "Los símbolos que figuran en los dos formularios sirven para:" %}</p>
+		<div class="ms-3">
+	 		<p><i class="fas fa-copy text-traduze me-2"></i>{% trans "Borrar el texto" %}</p>
+			<p><i class="fas fa-trash text-traduze me-2"></i>{% trans "Copiar el texto" %}</p>
+		</div>
+		
+		<h5 class="mt-4">{% trans "2) Traducción de documentos" %}</h5>
+		<p>{% blocktrans %}Esta interfaz ofrece la posibilidad de traducir documentos de los siguientes formatos: txt, docx, xlsx, pptx, odt, ods, odp, html. Para ello, el usuario deberá hacer clic en el botón de ‘Traducción de documentos’, en la parte inferior izquierda de la pantalla y subir el documento elegido:{% endblocktrans %}</p>
+		<div class="help_image">
+			<img src="{% if LANGUAGE_CODE == 'an' %}{% static 'img/an/2_TraduZe_subir_documento_ara.jpg' %}{% else %}{% static 'img/es/2_TraduZe_subir_documento_es.jpg' %}{% endif %}" class="img-fluid">
+		</div>
+		<p>{% trans "Una vez elegido el documento, el usuario deberá hacer clic en el botón de abrir y cuando el documento haya sido traducido al aragonés, solo tendrá que descargar el archivo a su ordenador." %}</p>
+		<div class="help_image">
+			<img src="{% if LANGUAGE_CODE == 'an' %}{% static 'img/an/4_TraduZe_documento_traducido_ara.jpg' %}{% else %}{% static 'img/es/4_TraduZe_documento_traducido_es.jpg' %}{% endif %}" class="img-fluid">
+		</div>
+
+		<h5 class="mt-4">{% trans "3) Traducción al vuelo de un sitio web" %}</h5>
+		<p>{% blocktrans %}Esta página también ofrece la posibilidad de traducir automáticamente páginas web. Para ello el usuario deberá ir al botón de ‘Traducción de URLs’ que se halla en la parte inferior derecha de la pantalla:{% endblocktrans %}</p>
+		<div class="help_image">
+			<img src="{% if LANGUAGE_CODE == 'an' %}{% static 'img/an/5_TraduZe_traducir_web_ara.jpg' %}{% else %}{% static 'img/es/5_TraduZe_traducir_web_es.jpg' %}{% endif %}" class="img-fluid">
+		</div>
+		<p>{% trans "La página será traducida y se mostrará en la misma pantalla:" %}</p>
+		<div class="help_image">
+			<img src="{% if LANGUAGE_CODE == 'an' %}{% static 'img/an/6_TraduZe_traducir-web_traducido_ara.jpg' %}{% else %}{% static 'img/es/6_TraduZe_traducir-web_traducido_es.jpg' %}{% endif %}" class="img-fluid">
+		</div>
+		<p class="mt-5"><strong>{% blocktrans %}Por último, TraduZe es un traductor automático en versión Beta. Por ello si el usuario encuentra algún error o quiere hacer algún comentario puede compartirlo mediante el formulario que se halla en la parte inferior de la página:{% endblocktrans %}</strong></p>
+		<div class="help_image">
+			<img src="{% if LANGUAGE_CODE == 'an' %}{% static 'img/an/7_TraduZe_formulario_ara.jpg' %}{% else %}{% static 'img/es/7_TraduZe_formulario_es.jpg' %}{% endif %}" class="img-fluid">
+		</div>
+	</div>
+{% endblock %}

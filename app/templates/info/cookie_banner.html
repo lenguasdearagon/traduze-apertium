@@ -1,0 +1,93 @@
+{% load static %}
+{% load i18n %}
+
+
+<div id="cookies_inputs">
+  <input type="hidden" value="1" id="technical_cookies">
+  <input type="hidden" value="1" id="analysis_cookies">
+</div>
+
+
+<!-- COOKIE MODAL -->
+<div class="modal fade bottom" id="cookies_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true" data-bs-backdrop="true">
+  <div class="modal-dialog modal-frame modal-bottom modal-notify modal-info bg-traduze" role="document">
+    <div class="modal-content bg-white">
+      <div class="modal-body">
+        <div class="row"> <!-- d-flex justify-content-center align-items-center">-->
+          <div class="col-lg-9">
+            <p class="mb-1">{% trans "Esta página web utiliza cookies propios y de terceros para mejorar la experiencia de navegación." %}</p>
+            <p class="">{% trans "Antes de continuar, por favor, desabilita las opciones que no quieras." %}</p>
+            <div id="cookie_options" class="d-block mb-3">
+              <div class="form-check form-switch me-3 d-inline-block">
+                <input class="form-check-input technical_cookies_input" type="checkbox" id="technical_cookies_input" checked disabled>
+                <label class="form-check-label" for="technical_cookies_input">{% trans "Cookies técnicas" %}</label>
+              </div>
+              <div class="form-check form-switch d-inline-block">
+                <input class="form-check-input analysis_cookies_input" type="checkbox" id="analysis_cookies_input" checked>
+                <label class="form-check-label" for="analysis_cookies_input">{% trans "Cookies de análisis" %}</label>
+              </div>
+            </div>
+            <a id="more_info" class="mt-3 text-traduze" data-bs-dismiss="modal"><i class="fas fa-cog me-2 text-traduze"></i>{% trans "Más información" %}</a>
+          </div>
+          <div class="col-lg-3">
+            <div class="d-grid">
+              <a class="btn btn-traduze accept_cookies" data-bs-dismiss="modal">{% trans "Aceptar" %}</a>
+              <a class="btn btn-traduze-dark reject_all" data-bs-dismiss="modal">{% trans "Deshabilitar todas" %}</a>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END COOKIE MODAL -->
+
+<!-- EXTRA INFO COOKIE MODAL -->
+<div class="modal fade" id="extra_info_cookies_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true" data-bs-backdrop="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header btn-elhuyar-dark">
+        <h3 class="modal-title">{% trans "Cookies" %}</h3>
+      </div>
+      <div class="modal-body">
+        <div class="row"> <!-- d-flex justify-content-center align-items-center">-->
+          <div class="col-12">
+            <p class="mb-1">{% trans "Esta página web utiliza cookies propios y de terceros para mejorar la experiencia de navegación." %}</p>
+            <p class="">{% trans "Antes de continuar, por favor, desabilita las opciones que no quieras." %}</p>
+            <div id="cookie_options">
+              <div class="option mb-3">
+                <h4 class="text-elhuyar-dark">{% trans "Cookies técnicas" %}</h4>
+                <p>{% blocktrans %}Son aquéllas que permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en ella existan como, por ejemplo, controlar el tráfico y la comunicación de datos, identificar la sesión, acceder a partes de acceso restringido, recordar los elementos que integran un pedido, realizar el proceso de compra de un pedido, realizar la solicitud de inscripción o participación en un evento, utilizar elementos de seguridad durante la navegación, almacenar contenidos para la difusión de videos o sonido o compartir contenidos a través de redes sociales.{% endblocktrans %}</p>
+                <div class="form-check form-switch me-3">
+                  <input class="form-check-input technical_cookies_input" type="checkbox" id="technical_cookies_input2" checked disabled>
+                  <label class="form-check-label" for="technical_cookies_input2">{% trans "Cookies técnicas" %}</label>
+                </div>
+              </div>
+              <div class="option mb-3">
+                <h4 class="text-elhuyar-dark">{% trans "Cookies de análisis" %}</h4>
+                <p>{% blocktrans %}Son aquéllas que bien tratadas por nosotros o por terceros, nos permiten cuantificar el número de usuarios y así realizar la medición y análisis estadístico de la utilización que hacen los usuarios del servicio ofertado. Para ello se analiza su navegación en nuestra página web con el fin de mejorar la oferta de productos o servicios que le ofrecemos.{% endblocktrans %}</p>
+                <div class="form-check form-switch">
+                  <input class="form-check-input analysis_cookies_input" type="checkbox" id="analysis_cookies_input2" checked>
+                  <label class="form-check-label" for="analysis_cookies_input2">{% trans "Cookies de análisis" %}</label>
+                </div>
+              </div>
+            </div>
+            <div class="row g-2">
+              <div class="col-md-6">
+                <a class="btn btn-traduze d-block mb-2 accept_cookies" data-bs-dismiss="modal">{% trans "Guardar" %}</a>
+              </div>
+              <div class="col-md-6">
+                <a class="btn btn-traduze-dark d-block reject_all" data-bs-dismiss="modal">{% trans "Deshabilitar todas" %}</a>
+              </div>
+            </div>           
+          </div>          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END COOKIE MODAL -->
+
+<script type="text/javascript" src="{% static 'js/cookies.js' %}"></script>
